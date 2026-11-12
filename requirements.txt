@@ -1,0 +1,23 @@
+# Requirements for LLM Lab Record - All 10 Experiments
+# Install:  python -m venv .venv  (Windows: .venv\Scripts\activate)
+#           pip install -r requirements.txt
+#
+# Experiment -> package mapping:
+#   Exp 1 (GPT-2 text generation):        transformers, torch
+#   Exp 2 (N-gram models):                stdlib only (re, collections)
+#   Exp 3 (BERT sentiment):               transformers, torch
+#   Exp 4 (Prompt engineering tasks):     stdlib only (re)
+#   Exp 5 (GPT-2 chatbot):                transformers, torch
+#   Exp 6 (TF-IDF/LSA search):            scikit-learn, numpy
+#   Exp 7 (Sentence-BERT search):         sentence-transformers, torch
+#   Exp 8 (Fine-tune BERT):               transformers, torch
+#   Exp 9 (Fine-tune DistilBERT on IMDb): transformers, datasets, accelerate, torch
+#   Exp 10 (Resume analyzer):             stdlib only (re)
+
+transformers>=4.40
+torch>=2.0
+scikit-learn>=1.3
+numpy>=1.26
+sentence-transformers>=2.7
+datasets>=2.18
+accelerate>=0.28
